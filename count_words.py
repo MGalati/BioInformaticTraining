@@ -15,4 +15,4 @@ if __name__ == '__main__':
     f = open('G:\\Téléchargement\\rosalind_ini6.txt', 'r')
     raw_input = f.read()
     text = raw_input.split()
-    print(count_words(text))
+    count_words(text)
