@@ -32,7 +32,7 @@ def compt_gc(dict):
             elif bases == 'A' or bases == 'T':
                 pass
             else:
-                print("NOT A BIOLOGICAL SEQ")
+                print('NOT A BIOLOGICAL SEQ')
                 exit(1)
         content = (gc / number_bases) * 100
         dict_gc[content] = id
@@ -49,13 +49,9 @@ def highest_gc(dict_gc):
     print('%s\n%.6f' % (dict_gc[highest], highest))
 
 
-def main():
+if __name__ == '__main__':
     f = open('G:\\Téléchargement\\rosalind_gc.txt', 'r')
     seqs = f.read().splitlines()
     dict = dict_seq(seqs)
     dict_gc = compt_gc(dict)
-    print(highest_gc(dict_gc))
-
-
-if __name__ == '__main__':
-    main()
+    highest_gc(dict_gc)
