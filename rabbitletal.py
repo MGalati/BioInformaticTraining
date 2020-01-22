@@ -13,4 +13,4 @@ def mortal_fib(months, lifetime):
 
 
 if __name__ == '__main__':
-    print(mortal_fib(96, 16))
+    mortal_fib(96, 16)
