@@ -12,4 +12,4 @@ def rabbit(month, bunny):
 
 
 if __name__ == '__main__':
-    print(rabbit(30,5))
+    rabbit(30,5)
