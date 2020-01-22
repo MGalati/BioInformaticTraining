@@ -10,4 +10,4 @@ def dna2rna(dna):
 if __name__ == '__main__':
     f = open('G:\\Téléchargement\\test.txt', 'r')
     dna = f.read()
-    print(dna2rna(dna))
+    dna2rna(dna)
