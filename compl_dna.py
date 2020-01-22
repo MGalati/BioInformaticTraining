@@ -23,4 +23,4 @@ def compl_dna(dna):
 if __name__ == '__main__':
     f = open('G:\\Téléchargement\\test.txt', 'r')
     seq = f.read()
-    print(compl_dna(seq))
+    compl_dna(seq)
