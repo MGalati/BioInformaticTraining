@@ -15,4 +15,4 @@ if __name__ == '__main__':
     raw_input = f.read().splitlines()
     seq1 = raw_input[0]
     seq2 = raw_input[1]
-    print(hamming(seq1, seq2))
+    hamming(seq1, seq2)
