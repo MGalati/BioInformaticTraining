@@ -13,4 +13,4 @@ def count_DNA_bases(seq):
 if __name__ == '__main__':
     f = open('G:\\Téléchargement\\test.txt', 'r')
     seq = f.read()
-    print(count_DNA_bases(seq))
+    count_DNA_bases(seq)
