@@ -23,16 +23,18 @@ def motif_in_bank():
     handle = open(directory + 'seq_file.fasta', 'r')
     motifs = re.compile(r'(?=([N][^P][S|T][^P]))')
     count = 0
-
+    f = open('mprt_result.txt', 'w')
+    
     for record in SeqIO.parse(handle, 'fasta'):
         sequence = record.seq
         positions = []
         for m in re.finditer(motifs, str(sequence)): #Looking for the motif
             positions.append(m.start() + 1)
-        if count < len(identifier): #Giving the result in the console
+        if count < len(identifier):
+#Giving the result in txt file as c/p in rosalind ended wrong for this exercice
             if len(positions) > 0:
-                print(identifier[count])
-                print(' '.join(map(str, positions)))
+                f.write(identifier[count]+ '\n')
+                f.write(' '.join(map(str, positions))+ '\n')
                 count += 1
         if count == len(identifier):
             break
