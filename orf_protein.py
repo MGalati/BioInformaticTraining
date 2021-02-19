@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# http://rosalind.info/problems/cons/
+# http://rosalind.info/problems/orf/
 
 import re
 
