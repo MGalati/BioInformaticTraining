@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# http://rosalind.info/problems/orf/
+# http://rosalind.info/problems/revp/
 
 def fasta_parse(raw_data):
     """Preprocess the entry fasta file. Return a list with header as even
